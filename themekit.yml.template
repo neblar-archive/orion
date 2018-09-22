@@ -1,0 +1,4 @@
+production:
+  password: <password>
+  theme_id: "<id>"
+  store: <store>
