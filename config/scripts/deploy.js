@@ -8,7 +8,7 @@ const theme = process.env.THEMEKIT_ALIAS ? process.env.THEMEKIT_ALIAS : 'theme';
 const method = args.m ? args.m : 'upload';
 const force = args.f === 'y' ? '-f' : '';
 const buildFolder = 'build';
-const config = '../themekit.yml';
+const config = '../../themekit.yml';
 
 if (shell.exec(`cd ${buildFolder} && ${theme} ${method} ${force} -c ${config} -e ${process.env.NODE_ENV}`).code !== 0) {
     console.log(chalk.red("Theme deployment failed"));
